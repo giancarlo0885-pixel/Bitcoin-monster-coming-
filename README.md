@@ -1,14 +1,5 @@
-# Bitcoin Monster Railway Fixed
+# Bitcoin Monster Railway Final
 
-IMPORTANT: These files must be at the GitHub repository ROOT:
-- app.py
-- requirements.txt
-- railway.json
-- Procfile
-- runtime.txt
-- .streamlit/config.toml
+This version is safe even if Railway starts `python app.py`; it auto-relaunches itself as Streamlit.
 
-Railway start command:
-streamlit run app.py --server.address 0.0.0.0 --server.port ${PORT} --server.headless true
-
-Do not upload the folder itself as a nested folder. Upload the files inside it to the repo root.
+Upload the files inside this zip to the root of your GitHub repo, then redeploy Railway.
