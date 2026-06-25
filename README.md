@@ -1,15 +1,14 @@
-# Bitcoin Monster 223 — Railway Fixed
+# Bitcoin Monster Railway Fixed
 
-Railway-safe Streamlit market dashboard.
+IMPORTANT: These files must be at the GitHub repository ROOT:
+- app.py
+- requirements.txt
+- railway.json
+- Procfile
+- runtime.txt
+- .streamlit/config.toml
 
-## Data provider fallback order
+Railway start command:
+streamlit run app.py --server.address 0.0.0.0 --server.port ${PORT} --server.headless true
 
-Yahoo yfinance → Yahoo Chart API → Binance.US crypto candles → CoinGecko crypto chart/spot → Stooq daily stock fallback.
-
-The app does not crash if one provider blocks, times out, or returns empty data.
-
-## Railway start command
-
-```bash
-streamlit run app.py --server.port=$PORT --server.address=0.0.0.0
-```
+Do not upload the folder itself as a nested folder. Upload the files inside it to the repo root.
